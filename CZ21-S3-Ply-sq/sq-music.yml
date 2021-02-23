@@ -7,3 +7,9 @@ eureka:
       serviceUrl:
          defaultZone: http://127.0.0.1:8000/eureka
          
+spring:
+   dataSource:
+      driverClassName: com.mysql.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1//CZ21-S3-Ply-sq?useSSL=false
+      username: root
+      password: a
