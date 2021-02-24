@@ -1,24 +1,16 @@
 server:
    port: 80
-      
+
 eureka:
    client:
       serviceUrl:
          defaultZone: http://127.0.0.1:8000/eureka
-
+         
 zuul:
-   #    将敏感头设置在 zuul 下，表示对所有的路由的有效
-   #    设置要过滤的敏感头， 设置空值可以取消过滤所有的头域字段 ==》 不过滤
-   sensitiveHeaders: 
    routes:
-      # 用户网元地址
-      sq-user:
-         path: /user/**
-       # 文章网元地址
-      sq-music:
-         path: /music/**
-       # 门户网元地址==》默认路由
-      sq-index:
-         path: /**
-      # 默认路由
-               
+      # 用户路由
+      sq-user: /user/**
+      # 音乐路由
+      sq-music: /music/**
+      # 门户作为默认的路由地址==>放置在所有路由配置的下面
+      sq-index: /**
