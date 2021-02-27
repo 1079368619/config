@@ -19,7 +19,7 @@ feign:
 spring:
    datasource:
       driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/CZ21-S3-Ply-mybatis?useSSL=false
+      url: jdbc:mysql://127.0.0.1:3306/C83-S3-Ply-blog?useSSL=false
       username: root
       password: a
       
